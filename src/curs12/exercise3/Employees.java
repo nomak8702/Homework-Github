@@ -47,14 +47,12 @@ public class Employees {
         List<Integer> salary = new ArrayList<>();
         for (Employee employee : persons) {
             salary.add(employee.getSalary());
-            }
-        for(Employee employee:persons) {
+        }
+        for (Employee employee : persons) {
             if (employee.getSalary() == Collections.max(salary)) {
                 result.put(employee.getSalary(), employee.getCompany());
             }
         }
         return result;
     }
-
-
 }
