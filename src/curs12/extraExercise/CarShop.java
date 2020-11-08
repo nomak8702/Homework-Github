@@ -13,10 +13,9 @@ public class CarShop {
 
     public Map<String, Integer> getNumbersCars() {
         Map<String, Integer> result = new HashMap<>();
-        int count = 0;
-        for (Car car : cars) {
-            count++;
-            result.put(car.getName(), count);
+        for(Car car:cars){
+            Integer count=result.(car.getName());
+            result.put(car.getName(), (count == null) ? 1: count+1));
         }
         return result;
     }
